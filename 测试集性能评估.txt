@@ -1,0 +1,11 @@
+终端cmd跳转到mmsegmentation目录文件下——cd mmsegmentation
+
+
+####测试集精度指标
+
+python tools/test.py projects/dubai/pspnet-DubaiDataset.py projects/dubai/work_dirs/DubaiDataset/iter_3000.pth
+
+
+
+速度指标
+python tools/analysis_tools/benchmark.py projects/dubai/pspnet-DubaiDataset.py projects/dubai/work_dirs/DubaiDataset/iter_3000.pth

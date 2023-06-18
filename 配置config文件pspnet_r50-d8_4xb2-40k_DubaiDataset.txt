@@ -1,0 +1,30 @@
+配置pspnet_r50-d8_4xb2-40k_DubaiDataset.py：
+
+终端cmd跳转到mmsegmentation目录文件下——cd mmsegmentation
+
+打开python——ipython
+
+from mmengine import Config
+
+加载配置文件——
+cfg=Config.fromfile("./configs/pspnet/pspnet_r50-d8_4xb2-40k_DubaiDataset.py")
+
+
+查数据集配置
+
+
+cfg.train_dataloader
+
+cfg.val_dataloader
+
+cfg.test_dataloader
+
+
+
+###修改成自己的绝对路径
+
+cfg.train_dataloader.dataset.data_root='D:/0.dive into pytorch/openmmlab/mmsegmentation/data/Dubai-dataset/'
+
+cfg.val_dataloader.dataset.data_root='D:/0.dive into pytorch/openmmlab/mmsegmentation/data/Dubai-dataset/'
+
+cfg.test_dataloader.dataset.data_root='D:/0.dive into pytorch/openmmlab/mmsegmentation/data/Dubai-dataset/'
